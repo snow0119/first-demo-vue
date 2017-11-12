@@ -2,7 +2,7 @@
   div(class = 'ha')
     h1 我是标题
     span 来测试pug模板了~~~
-    button sendPost
+    button(@click="postData") sendPost
 </template>
 <script>
   export default {
