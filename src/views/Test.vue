@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(class = 'ha')
+  div(class = 'content')
     h1 我是标题
     span 来测试pug模板了~~~
     button(@click="postData") sendPost
@@ -22,7 +22,7 @@
   }
 </script>
 <style>
-  .ha {
+  .content {
     color: white;
     background-color: grey;
   }
