@@ -1,16 +1,96 @@
 <template lang="pug">
-  div(@click="postData") 测试
+  div(class="container")
+    h2 备忘录
+    div(class="add-memo", @click="$router.push('/add-memo')") 添加
+    ul(v-if="memoList.length > 0")
+      li(v-for="(memo, index) in memoList", @click="$router.push(`/modify-memo/${memo.memoId}`)")
+        div {{memo.memoName}}
+        div
+          span 已完成：{{memo.completed.length}}
+          span 未完成：{{memo.unfinished.length}}
+        p 备注：{{memo.demand}}
+    div(v-else, class="empty") 暂无备忘录, 可点击右上角进行添加。
 </template>
 <script>
   export default {
     name: 'memo-list',
-    methods: {
-      async postData () {
-        const {data} = await this.$http.get('/get-all-memo')
-        console.info(data)
+    data () {
+      return {
+        memoList: []
       }
+    },
+    created () {
+      const $this = this
+      this.$http.get('/get-all-memo').then(({data: {memoList}}) => {
+        $this.memoList = memoList
+      })
     }
   }
 </script>
 <style>
+  .container {
+    font-size: 16px;
+  }
+
+  .container .add-memo {
+    margin-left: 60%;
+    margin-right: 25%;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    background-color: #fff;
+  }
+
+  .container ul {
+    padding: 0;
+    margin: 0 200px;
+    list-style: none;
+    overflow: scroll;
+    max-height: 478px;
+  }
+
+  .container ul li {
+    padding: 10px;
+    text-align: left;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .container ul li div:first-child {
+    text-align: center;
+  }
+
+  .container ul li span {
+    float: right;
+    color: #68999d;
+    font-size: 12px;
+    margin-right: 20px;
+    padding-left: 1rem;
+  }
+
+  .container ul li div:nth-child(2) {
+    overflow: hidden;
+  }
+
+  .container p {
+    color: #be8b94;
+    font-size: 14px;
+    padding-left: 1rem;
+  }
+
+  .container .empty {
+    margin: 0 200px;
+    font-size: 14px;
+    padding: 50px 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .container button {
+    display: block;
+    color: #68999d;
+    margin: 20px auto;
+    background-color: #fff;
+  }
 </style>
