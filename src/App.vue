@@ -13,7 +13,7 @@
 <style>
   body {
     margin: 0;
-    padding: 0 0 100px 0;
+    padding: 50px 0;
     background-size: cover;
     background: url("./assets/background.jpg") no-repeat;
   }
