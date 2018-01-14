@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(class="container")
+  div(class="container-modify")
     h2 修改备忘录
     ul
       li
@@ -52,14 +52,14 @@
   }
 </script>
 <style>
-  .container ul {
+  .container-modify ul {
     padding: 20px;
     list-style: none;
     margin: 0 200px 20px;
     background-color: rgba(255, 255, 255, 0.6);
   }
 
-  .container li input {
+  .container-modify li input {
     position: relative;
     width: 50%;
     margin-top: 10px;
@@ -69,23 +69,23 @@
     border: 1px solid #f1f1f1;
   }
 
-  .container li span {
+  .container-modify li span {
     width: 80px;
     text-align: left;
     display: inline-block;
     vertical-align: middle;
   }
 
-  .container li:nth-child(3) {
+  .container-modify li:nth-child(3) {
     position: relative;
   }
 
-  .container li:nth-child(3) span {
+  .container-modify li:nth-child(3) span {
     margin-top: 20px;
     vertical-align: top;
   }
 
-  .container .update-memo {
+  .container-modify .update-memo {
     width: 100px;
     font-size: 16px;
     margin-top: 20px;

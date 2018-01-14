@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(class="container")
+  div(class="container-detail")
     h2 备忘录详情
     div(class="update-memo", @click="$router.push(`/modify-memo/${$route.params.memoId}`)") 修改
     ul
@@ -39,18 +39,18 @@
   }
 </script>
 <style>
-  .container ul {
+  .container-detail ul {
     padding: 20px;
     list-style: none;
     margin: 0 200px 20px;
     background-color: rgba(255, 255, 255, 0.6);
   }
 
-  .container li:nth-child(3) {
+  .container-detail li:nth-child(3) {
     position: relative;
   }
 
-  .container li:nth-child(3) span {
+  .container-detail li:nth-child(3) span {
     margin-top: 20px;
     vertical-align: top;
   }

@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(class="container")
+  div(class="container-add")
     h2 添加备忘录
     ul
       li
@@ -52,14 +52,14 @@
   }
 </script>
 <style>
-  .container ul {
+  .container-add ul {
     padding: 20px;
     list-style: none;
     margin: 0 200px 20px;
     background-color: rgba(255, 255, 255, 0.6);
   }
 
-  .container li input {
+  .container-add li input {
     position: relative;
     width: 50%;
     margin-top: 10px;
@@ -69,23 +69,23 @@
     border: 1px solid #f1f1f1;
   }
 
-  .container li span {
+  .container-add li span {
     width: 80px;
     text-align: left;
     display: inline-block;
     vertical-align: middle;
   }
 
-  .container li:nth-child(3) {
+  .container-add li:nth-child(3) {
     position: relative;
   }
 
-  .container li:nth-child(3) span {
+  .container-add li:nth-child(3) span {
     margin-top: 20px;
     vertical-align: top;
   }
 
-  .container .remark {
+  .container-add .remark {
     display: inline-block;
     position: relative;
     height: 50px;
@@ -97,7 +97,7 @@
     border: 1px solid #f1f1f1;
   }
 
-  .container .remark textarea {
+  .container-add .remark textarea {
     border: 0;
     outline: 0;
     width: 100%;
@@ -105,20 +105,20 @@
     height: 100%;
   }
 
-  .container .add-item, .container .save-memo {
+  .container-add .add-item, .container-add .save-memo {
     border-radius: 5px;
     background-color: white;
     border: 1px solid #f1f1f1;
   }
 
-  .container .add-item {
+  .container-add .add-item {
     position: absolute;
     top: 20px;
     width: 50px;
     margin-left: 10px;
   }
 
-  .container .save-memo {
+  .container-add .save-memo {
     width: 100px;
     font-size: 16px;
     margin-top: 20px;

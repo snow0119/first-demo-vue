@@ -6,14 +6,14 @@ Vue.use(VueRouter)
 export default new VueRouter({
   routes: [{
     path: '/',
-    name: 'Hello',
-    component: () => import('../components/HelloWorld')
-  }, {
-    path: '/hi',
-    name: 'test',
-    component: () => import('../views/Test')
-  }, {
-    path: '/memo-list',
+  //   name: 'Hello',
+  //   component: () => import('../components/HelloWorld')
+  // }, {
+  //   path: '/hi',
+  //   name: 'test',
+  //   component: () => import('../views/Test')
+  // }, {
+  //   path: '/memo-list',
     name: 'memoList',
     component: () => import('../views/MemoList')
   }, {

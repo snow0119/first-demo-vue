@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(class="container")
+  div(class="container-list")
     h2 备忘录列表
     div(class="add-memo", @click="$router.push('/add-memo')") 添加
     ul(v-if="memoList.length > 0")
@@ -26,11 +26,11 @@
   }
 </script>
 <style>
-  .container {
+  .container-list {
     font-size: 16px;
   }
 
-  .container .add-memo {
+  .container-list .add-memo {
     margin-left: 60%;
     margin-right: 25%;
     padding: 5px 10px;
@@ -39,7 +39,7 @@
     background-color: #fff;
   }
 
-  .container ul {
+  .container-list ul {
     padding: 0;
     margin: 0 200px;
     list-style: none;
@@ -47,7 +47,7 @@
     max-height: 478px;
   }
 
-  .container ul li {
+  .container-list ul li {
     padding: 10px;
     text-align: left;
     border-radius: 15px;
@@ -55,11 +55,11 @@
     background-color: rgba(255, 255, 255, 0.6);
   }
 
-  .container ul li div:first-child {
+  .container-list ul li div:first-child {
     text-align: center;
   }
 
-  .container ul li span {
+  .container-list ul li span {
     float: right;
     color: #68999d;
     font-size: 12px;
@@ -67,17 +67,17 @@
     padding-left: 1rem;
   }
 
-  .container ul li div:nth-child(2) {
+  .container-list ul li div:nth-child(2) {
     overflow: hidden;
   }
 
-  .container p {
+  .container-list p {
     color: #697b6c;
     font-size: 14px;
     padding-left: 1rem;
   }
 
-  .container .empty {
+  .container-list .empty {
     margin: 0 200px;
     font-size: 14px;
     padding: 50px 10px;
@@ -85,7 +85,7 @@
     background-color: rgba(255, 255, 255, 0.6);
   }
 
-  .container button {
+  .container-list button {
     display: block;
     color: #68999d;
     margin: 20px auto;
