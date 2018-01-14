@@ -1,6 +1,6 @@
 <template lang="pug">
   div(class="container")
-    h2 备忘录
+    h2 备忘录列表
     div(class="add-memo", @click="$router.push('/add-memo')") 添加
     ul(v-if="memoList.length > 0")
       li(v-for="(memo, index) in memoList", @click="$router.push(`/memo-detail/${memo.memoId}`)")
