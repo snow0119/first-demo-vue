@@ -4,10 +4,10 @@
     ul
       li
         span 模块名：
-        input(class="memoName", v-model="memoName", placeholder="请输入模块名")
+        input(class="memoName", v-model="memoName", placeholder="请输入模块名", readonly)
       li
         span 需求描述：
-        input(class="demand", v-model="demand", placeholder="请输入需求的相关描述")
+        input(class="demand", v-model="demand", placeholder="请输入需求的相关描述", readonly)
       li
         span 需完成项:
         div(class="items")
@@ -43,6 +43,7 @@
       },
       async updateMemo () {
         const {memoName, demand, items, memoId} = this
+        if (!memoName || !demand || !items) return alert('请将相关内容填写完整')
         const result = (await this.$http.post('/update-memo', {
           memoName, demand, items
         })).data

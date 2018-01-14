@@ -42,6 +42,7 @@
       },
       async saveMemo () {
         const {memoName, demand, items} = this
+        if (!memoName || !demand || !items) return alert('请将相关内容填写完整')
         const result = (await this.$http.post('/save-memo', {
           memoName, demand, items
         })).data
