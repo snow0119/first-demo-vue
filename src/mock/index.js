@@ -2,7 +2,7 @@ import {mock} from 'mockjs'
 
 mock(/get-all-memo/, () => {
   return mock({
-    'memoList|1-10': [{
+    'memoList|0-6': [{
       memoId: '@id',
       memoName: '@cword(0, 10)',
       demand: '@cword(0, 100)',
