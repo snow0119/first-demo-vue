@@ -6,7 +6,10 @@
       li(v-for="(memo, index) in memoList", @click="$router.push(`/memo-detail/${memo.memoId}`)")
         div {{memo.memoName}}
         span {{memo.createTime}}
-        p 备注：{{memo.demand}}
+        div
+          p
+            span 需求描述:
+            | {{memo.demand}}
     div(v-else, class="empty") 暂无备忘录, 可点击右上角进行添加。
 </template>
 <script>
@@ -71,10 +74,18 @@
     overflow: hidden;
   }
 
-  .container-list p {
+  .container-list ul li p {
     color: #697b6c;
     font-size: 14px;
     padding-left: 1rem;
+  }
+
+  .container-list ul li p span {
+    float: none;
+    color: #2c3e50;
+    font-size: 14px;
+    margin-right: 5px;
+    padding-left: 0;
   }
 
   .container-list .empty {
