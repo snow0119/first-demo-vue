@@ -21,6 +21,7 @@
     name: 'update-memo',
     data () {
       return {
+        memoId: this.$route.params.memoId,
         memoName: '',
         demand: '',
         items: []
@@ -41,13 +42,13 @@
         })
       },
       async updateMemo () {
-        const {memoName, demand, items} = this
-        const result = (await this.$http.post('update-memo', {
+        const {memoName, demand, items, memoId} = this
+        const result = (await this.$http.post('/update-memo', {
           memoName, demand, items
         })).data
 
         alert(result.desc)
-        if (result.code === '0') this.$router.push(`/memo-detail/${result.data}`)
+        if (result.code === '0') this.$router.push(`/memo-detail/${memoId}`)
       }
     }
   }

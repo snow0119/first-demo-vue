@@ -42,7 +42,7 @@
       },
       async saveMemo () {
         const {memoName, demand, items} = this
-        const result = (await this.$http.post('save-memo', {
+        const result = (await this.$http.post('/save-memo', {
           memoName, demand, items
         })).data
 

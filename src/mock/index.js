@@ -32,11 +32,11 @@ mock(/get-memo-detail\/\d+$/, () => {
     memoName: '@cword(0, 10)',
     demand: '@cword(0, 100)',
     'completed|1-5': [{
-      selected: '@boolean',
+      selected: true,
       detail: '@cword(0,50)'
     }],
     'undone|1-5': [{
-      selected: '@boolean',
+      selected: false,
       detail: '@cword(0,50)'
     }],
     createTime: '@date'
@@ -56,7 +56,14 @@ mock(/update-memo/, () => {
   var isSuccess = '@boolean'
   return mock({
     code: isSuccess ? '0' : '1',
-    desc: isSuccess ? '修改成功' : '修改失败',
-    data: isSuccess ? '@id' : ''
+    desc: isSuccess ? '修改成功' : '修改失败'
+  })
+})
+
+mock(/delete-memo\/\d+$/, () => {
+  var isSuccess = '@boolean'
+  return mock({
+    code: isSuccess ? '0' : '1',
+    desc: isSuccess ? '删除成功' : '删除失败'
   })
 })
