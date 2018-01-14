@@ -3,11 +3,9 @@
     h2 备忘录
     div(class="add-memo", @click="$router.push('/add-memo')") 添加
     ul(v-if="memoList.length > 0")
-      li(v-for="(memo, index) in memoList", @click="$router.push(`/modify-memo/${memo.memoId}`)")
+      li(v-for="(memo, index) in memoList", @click="$router.push(`/memo-detail/${memo.memoId}`)")
         div {{memo.memoName}}
-        div
-          span 已完成：{{memo.completed.length}}
-          span 未完成：{{memo.unfinished.length}}
+        span {{memo.createTime}}
         p 备注：{{memo.demand}}
     div(v-else, class="empty") 暂无备忘录, 可点击右上角进行添加。
 </template>
@@ -74,7 +72,7 @@
   }
 
   .container p {
-    color: #be8b94;
+    color: #697b6c;
     font-size: 14px;
     padding-left: 1rem;
   }
