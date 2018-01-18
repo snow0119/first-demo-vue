@@ -21,9 +21,8 @@
     }
   }
 </script>
-<style>
-  .content {
-    color: white;
-    background-color: grey;
-  }
+<style lang="stylus">
+  .content
+    color white
+    background-color grey
 </style>
