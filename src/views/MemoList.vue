@@ -28,78 +28,68 @@
     }
   }
 </script>
-<style>
-  .container-list {
-    font-size: 16px;
-  }
+<style lang="stylus">
+  .container-list
+    font-size 16px
 
-  .container-list .add-memo {
-    margin-left: 60%;
-    margin-right: 25%;
-    padding: 5px 10px;
-    margin-bottom: 20px;
-    border-radius: 30px;
-    background-color: #fff;
-  }
+    ul
+      padding 0
+      margin 0 200px
+      list-style none
+      overflow scroll
+      max-height 478px
 
-  .container-list ul {
-    padding: 0;
-    margin: 0 200px;
-    list-style: none;
-    overflow: scroll;
-    max-height: 478px;
-  }
+      li
+        padding 10px
+        text-align left
+        border-radius 15px
+        margin-bottom 10px
+        background-color rgba(255, 255, 255, 0.6)
 
-  .container-list ul li {
-    padding: 10px;
-    text-align: left;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.6);
-  }
+        div
+          &:first-child
+            text-align center
 
-  .container-list ul li div:first-child {
-    text-align: center;
-  }
+          &:nth-child(2)
+            overflow hidden
 
-  .container-list ul li span {
-    float: right;
-    color: #68999d;
-    font-size: 12px;
-    margin-right: 20px;
-    padding-left: 1rem;
-  }
+        span
+          float right
+          color #68999d
+          font-size 12px
+          margin-right 20px
+          padding-left 1rem
 
-  .container-list ul li div:nth-child(2) {
-    overflow: hidden;
-  }
+        p
+          color #697b6c
+          font-size 14px
+          padding-left 1rem
 
-  .container-list ul li p {
-    color: #697b6c;
-    font-size: 14px;
-    padding-left: 1rem;
-  }
+          span
+            float none
+            color #2c3e50
+            font-size 14px
+            margin-right 5px
+            padding-left 0
 
-  .container-list ul li p span {
-    float: none;
-    color: #2c3e50;
-    font-size: 14px;
-    margin-right: 5px;
-    padding-left: 0;
-  }
+  .add-memo
+    margin-left 60%
+    margin-right 25%
+    padding 5px 10px
+    margin-bottom 20px
+    border-radius 30px
+    background-color #fff
 
-  .container-list .empty {
-    margin: 0 200px;
-    font-size: 14px;
-    padding: 50px 10px;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.6);
-  }
+  .empty
+    margin 0 200px
+    font-size 14px
+    padding 50px 10px
+    border-radius 15px
+    background-color rgba(255, 255, 255, 0.6)
 
-  .container-list button {
-    display: block;
-    color: #68999d;
-    margin: 20px auto;
-    background-color: #fff;
-  }
+  button
+    display block
+    color #68999d
+    margin 20px auto
+    background-color #fff
 </style>

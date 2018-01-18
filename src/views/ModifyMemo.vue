@@ -54,79 +54,69 @@
     }
   }
 </script>
-<style>
-  .container-modify ul {
-    padding: 20px;
-    list-style: none;
-    margin: 0 200px 20px;
-    background-color: rgba(255, 255, 255, 0.6);
-  }
+<style lang="stylus">
+  .container-modify
+    ul
+      padding 20px
+      list-style none
+      margin 0 200px 20px
+      background-color rgba(255, 255, 255, 0.6)
 
-  .container-modify li .memoName, .container-modify li .demand {
-    position: relative;
-    width: 50%;
-    margin-top: 10px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    display: inline-block;
-    border: 1px solid #f1f1f1;
-  }
+      li
+        .memoName, .demand
+          position relative
+          width 50%
+          margin-top 10px
+          padding 10px 20px
+          border-radius 20px
+          display inline-block
+          border 1px solid #f1f1f1
 
-  .container-modify li span {
-    width: 80px;
-    text-align: left;
-    display: inline-block;
-    vertical-align: middle;
-  }
+        span
+          width 80px
+          text-align left
+          display inline-block
+          vertical-align middle
 
-  .container-modify li:nth-child(3) {
-    position: relative;
-  }
+        &:nth-child(3)
+          position relative
 
-  .container-modify li:nth-child(3) span {
-    margin-top: 10px;
-    vertical-align: top;
-  }
+          span
+            margin-top 10px
+            vertical-align top
 
-  .container-modify .items, .container-modify .item div {
-    display: inline-block;
-  }
+  .items
+    margin-top 10px
+    display inline-block
 
-  .container-modify .items {
-    margin-top: 10px;
-  }
+    div
+      display inline-block
 
-  .container-modify .item:nth-of-type(odd) {
-    background-color: #c3e6e8;
-  }
+  .item
+    position relative
+    padding 0 6px
+    background-color white
 
-  .container-modify .item:nth-of-type(even) {
-    background-color: #d8e8cb;
-  }
+    &:nth-of-type(odd)
+      background-color #c3e6e8
 
-  .container-modify .item {
-    position: relative;
-    padding: 0 6px;
-    background-color: white;
-  }
+    &:nth-of-type(even)
+      background-color #d8e8cb
 
-  .container-modify .item input {
-    position: absolute;
-    top: 50%;
-    transform: translate3d(0, -50%, 0);
-  }
+    input
+      position absolute
+      top 50%
+      transform translate3d(0, -50%, 0)
 
-  .container-modify .item div {
-    width: 420px;
-    padding: 5px;
-    font-size: 12px;
-    text-align: left;
-    margin-left: 20px;
-  }
+    div
+      width 420px
+      padding 5px
+      font-size 12px
+      text-align left
+      margin-left 20px
 
-  .container-modify .update-memo {
-    width: 100px;
-    font-size: 16px;
-    margin-top: 20px;
-  }
+  .update-memo
+    width 100px
+    font-size 16px
+    margin-top 20px
 </style>
