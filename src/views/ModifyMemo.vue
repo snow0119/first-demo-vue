@@ -89,9 +89,6 @@
     margin-top 10px
     display inline-block
 
-    div
-      display inline-block
-
   .item
     position relative
     padding 0 6px
@@ -109,6 +106,7 @@
       transform translate3d(0, -50%, 0)
 
     div
+      display inline-block
       width 420px
       padding 5px
       font-size 12px

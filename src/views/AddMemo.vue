@@ -53,120 +53,102 @@
     }
   }
 </script>
-<style>
-  .container-add ul {
-    padding: 20px;
-    list-style: none;
-    margin: 0 200px 20px;
-    background-color: rgba(255, 255, 255, 0.6);
-  }
+<style lang="stylus">
+  .container-add
+    ul
+      padding 20px
+      list-style none
+      margin 0 200px 20px
+      background-color rgba(255, 255, 255, 0.6)
 
-  .container-add li .memoName, .container-add li .demand {
-    position: relative;
-    width: 50%;
-    margin-top: 10px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    display: inline-block;
-    border: 1px solid #f1f1f1;
-  }
+      li
+        &:nth-child(3)
+          position relative
 
-  .container-add li span {
-    width: 80px;
-    text-align: left;
-    display: inline-block;
-    vertical-align: middle;
-  }
+          span
+            margin-top 20px
+            vertical-align top
 
-  .container-add li:nth-child(3) {
-    position: relative;
-  }
+        .memoName, .demand
+          position relative
+          width 50%
+          margin-top 10px
+          padding 10px 20px
+          border-radius 20px
+          display inline-block
+          border 1px solid #f1f1f1
 
-  .container-add li:nth-child(3) span {
-    margin-top: 20px;
-    vertical-align: top;
-  }
+        span
+          width 80px
+          text-align left
+          display inline-block
+          vertical-align middle
 
-  .container-add .remark {
-    display: inline-block;
-    position: relative;
-    height: 50px;
-    width: 50%;
-    margin-top: 10px;
-    padding: 10px 18px;
-    border-radius: 20px;
-    background-color: #fff;
-    border: 1px solid #f1f1f1;
-  }
+    .remark
+      display inline-block
+      position relative
+      height 50px
+      width 50%
+      margin-top 10px
+      padding 10px 18px
+      border-radius 20px
+      background-color #fff
+      border 1px solid #f1f1f1
 
-  .container-add .remark textarea {
-    border: 0;
-    outline: 0;
-    width: 100%;
-    resize: none;
-    height: 100%;
-  }
+      textarea
+        border 0
+        outline 0
+        width 100%
+        resize none
+        height 100%
 
-  .container-add .add-item, .container-add .save-memo {
-    border-radius: 5px;
-    background-color: white;
-    border: 1px solid #f1f1f1;
-  }
+  .add-item, .save-memo
+    border-radius 5px
+    background-color white
+    border 1px solid #f1f1f1
 
-  .container-add .items {
-    margin-left: 80px;
-  }
+  .items
+    display inline-block
+    margin-left 80px
+    margin-top 10px
 
-  .container-add .items input {
-    width: 5px;
-  }
+    input
+      width 5px
 
-  .container-add .add-item {
-    position: absolute;
-    top: 20px;
-    width: 50px;
-    margin-left: 10px;
-  }
+  .add-item
+    position absolute
+    top 20px
+    width 50px
+    margin-left 10px
 
-  .container-add .items, .container-add .item div {
-    display: inline-block;
-  }
+  .item
+    position relative
+    padding 0 6px
+    background-color white
 
-  .container-add .items {
-    margin-top: 10px;
-  }
+    &:nth-of-type(odd)
+      background-color #c3e6e8
 
-  .container-add .item:nth-of-type(odd) {
-    background-color: #c3e6e8;
-  }
+    &:nth-of-type(even)
+      background-color #d8e8cb
 
-  .container-add .item:nth-of-type(even) {
-    background-color: #d8e8cb;
-  }
+    div
+      display inline-block
 
-  .container-add .item {
-    position: relative;
-    padding: 0 6px;
-    background-color: white;
-  }
+    input
+      position absolute
+      top 50%
+      transform translate3d(0, -50%, 0)
 
-  .container-add .item input {
-    position: absolute;
-    top: 50%;
-    transform: translate3d(0, -50%, 0);
-  }
+    div
+      width 420px
+      padding 5px
+      font-size 12px
+      text-align left
+      margin-left 20px
 
-  .container-add .item div {
-    width: 420px;
-    padding: 5px;
-    font-size: 12px;
-    text-align: left;
-    margin-left: 20px;
-  }
-
-  .container-add .save-memo {
-    width: 100px;
-    font-size: 16px;
-    margin-top: 20px;
-  }
+  .save-memo
+    width 100px
+    font-size 16px
+    margin-top 20px
 </style>
