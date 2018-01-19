@@ -52,86 +52,69 @@
     }
   }
 </script>
-<style>
-  .container-detail ul {
-    padding: 20px;
-    list-style: none;
-    margin: 0 200px 20px;
-    background-color: rgba(255, 255, 255, 0.6);
-  }
+<style lang="stylus">
+  .container-detail
+    ul
+      padding 20px
+      list-style none
+      margin 0 200px 20px
+      background-color rgba(255, 255, 255, 0.6)
 
-  .container-detail li {
-    position: relative;
-    padding-bottom: 10px;
-  }
+      li
+        position relative
+        padding-bottom 10px
 
-  .container-detail li div {
-    display: inline-block;
-    width: 462px;
-  }
+        &:first-child, &:nth-child(2)
+          padding 5px
 
-  .container-detail li span {
-    width: 80px;
-    text-align: left;
-    display: inline-block;
-    vertical-align: middle;
-  }
+          span
+            margin-top 0
 
-  .container-detail li:first-child, .container-detail li:nth-child(2) {
-    padding: 5px;
-  }
+          div
+            font-size 14px
+            text-align left
+            color #697b6c
 
-  .container-detail li:first-child span, .container-detail li:nth-child(2) span {
-    margin-top: 0;
-  }
+        div
+          display inline-block
+          width 462px
 
-  .container-detail li:first-child div, .container-detail li:nth-child(2) div {
-    font-size: 14px;
-    text-align: left;
-    color: #697b6c;
-  }
+        span
+          width 80px
+          text-align left
+          display inline-block
+          margin-top 10px
+          vertical-align top
 
-  .container-detail li span {
-    margin-top: 10px;
-    vertical-align: top;
-  }
+  .btn-memo
+    margin-left 60%
+    margin-right 25%
+    margin-bottom 20px
 
-  .container-detail .btn-memo {
-    margin-left: 60%;
-    margin-right: 25%;
-    margin-bottom: 20px;
-  }
+  .btn
+    display inline-block
+    margin-right 10px
+    padding 5px 10px
+    border-radius 30px
+    background-color #fff
 
-  .container-detail .btn {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 5px 10px;
-    border-radius: 30px;
-    background-color: #fff;
-  }
+  .items, .item
+    display inline-block
 
-  .container-detail .items, .container-detail .item {
-    display: inline-block;
-  }
+  .items
+    text-align left
+    margin-top 10px
 
-  .container-detail .items {
-    text-align: left;
-    margin-top: 10px;
-  }
+  .item
+    width 450px
+    padding 5px
+    font-size 12px
+    text-align left
+    color #716b6b
 
-  .container-detail .item:nth-of-type(odd) {
-    background-color: #c3e6e8;
-  }
+    &:nth-of-type(odd)
+      background-color #c3e6e8
 
-  .container-detail .item:nth-of-type(even) {
-    background-color: #d8e8cb;
-  }
-
-  .container-detail .item {
-    width: 450px;
-    padding: 5px;
-    font-size: 12px;
-    text-align: left;
-    color: #716b6b;
-  }
+    &:nth-of-type(even)
+      background-color #d8e8cb
 </style>
