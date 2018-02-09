@@ -13,6 +13,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "mockjs": "^1.0.1-beta3",
+    "pug": "^2.0.0-rc.4",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
