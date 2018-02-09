@@ -28,5 +28,9 @@ export default new VueRouter({
     path: '/memo-detail/:memoId',
     name: 'memoDetail',
     component: () => import('../views/MemoDetail')
+  }, {
+    path: '/blog-index',
+    name: 'blogIndex',
+    component: () => import('../views/BlogIndex')
   }]
 })

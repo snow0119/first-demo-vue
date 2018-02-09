@@ -10,20 +10,19 @@
   }
 </script>
 
-<style>
+<style lang="stylus">
   * {
-    box-sizing: border-box;
+    box-sizing border-box
   }
 
   body {
-    margin: 0;
-    padding: 50px 0;
-    background-size: cover;
-    background: url("./assets/background.jpg") no-repeat;
+    margin 0
+    padding 0
+    background-color #f1f7e6
   }
 
   #app {
-    color: #2c3e50;
-    text-align: center;
+    color #2c3e50
+    text-align center
   }
 </style>
