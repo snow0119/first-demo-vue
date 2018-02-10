@@ -54,61 +54,53 @@
 </script>
 <style lang="stylus">
   .container-detail
+    width 92em
+    margin 0 auto
+    max-width 95%
+
     ul
-      padding 20px
+      padding 2em
       list-style none
-      margin 0 200px 20px
       background-color rgba(255, 255, 255, 0.6)
 
       li
+        text-align left
         position relative
-        padding-bottom 10px
+        padding-bottom 1em
 
         &:first-child, &:nth-child(2)
-          padding 5px
-
           span
             margin-top 0
 
           div
-            font-size 14px
-            text-align left
             color #697b6c
-
-        div
-          display inline-block
-          width 462px
+            text-align left
+            display inline-block
 
         span
-          width 80px
+          width 8em
           text-align left
           display inline-block
-          margin-top 10px
+          margin-top 1em
           vertical-align top
 
   .btn-memo
-    margin-left 60%
-    margin-right 25%
-    margin-bottom 20px
+    margin-bottom 2em
 
   .btn
     display inline-block
-    margin-right 10px
-    padding 5px 10px
+    margin-right 1em
+    padding 5px 1em
     border-radius 30px
     background-color #fff
 
-  .items, .item
-    display inline-block
-
   .items
     text-align left
-    margin-top 10px
+    margin-top 1em
+    display inline-block
 
   .item
-    width 450px
     padding 5px
-    font-size 12px
     text-align left
     color #716b6b
 

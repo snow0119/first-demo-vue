@@ -11,18 +11,16 @@
 </script>
 
 <style lang="stylus">
-  * {
+  *
     box-sizing border-box
-  }
 
-  body {
+  body
     margin 0
     padding 0
+    font-size 62.5%
     background-color #f1f7e6
-  }
 
-  #app {
+  #app
     color #2c3e50
     text-align center
-  }
 </style>

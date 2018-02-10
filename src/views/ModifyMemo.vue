@@ -56,25 +56,29 @@
 </script>
 <style lang="stylus">
   .container-modify
+    width 92em
+    margin 0 auto
+    max-width 95%
+
     ul
-      padding 20px
+      padding 2em
       list-style none
-      margin 0 200px 20px
       background-color rgba(255, 255, 255, 0.6)
 
       li
+        text-align left
+
         .memoName, .demand
           position relative
-          width 50%
-          margin-top 10px
-          padding 10px 20px
+          width 80%
+          margin-top 1em
+          padding 1em 2em
           border-radius 20px
           display inline-block
           border 1px solid #f1f1f1
 
         span
-          width 80px
-          text-align left
+          width 8em
           display inline-block
           vertical-align middle
 
@@ -82,11 +86,11 @@
           position relative
 
           span
-            margin-top 10px
+            margin-top 1em
             vertical-align top
 
   .items
-    margin-top 10px
+    margin-top 1em
     display inline-block
 
   .item
@@ -107,14 +111,14 @@
 
     div
       display inline-block
-      width 420px
       padding 5px
       font-size 12px
       text-align left
-      margin-left 20px
+      margin-left 2em
 
   .update-memo
-    width 100px
-    font-size 16px
-    margin-top 20px
+    width 10em
+    margin-top 2em
+    border-radius 30px
+    background-color #fff
 </style>

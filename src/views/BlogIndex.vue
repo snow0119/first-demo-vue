@@ -50,10 +50,9 @@
 
 <style lang="stylus">
   .blog
-    width 76.8%
+    width 92em
     margin 0 auto
-    min-width 62em
-    max-width 125em
+    max-width 95%
     text-align left
 
     header
@@ -79,7 +78,7 @@
 
       .primary
         width 59.7%
-        padding-right 2.63%
+        padding-right 2em
 
     footer
       height 60px

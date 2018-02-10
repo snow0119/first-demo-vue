@@ -55,10 +55,13 @@
 </script>
 <style lang="stylus">
   .container-add
+    width 92em
+    margin 0 auto
+    max-width 95%
+
     ul
-      padding 20px
+      padding 2em
       list-style none
-      margin 0 200px 20px
       background-color rgba(255, 255, 255, 0.6)
 
       li
@@ -66,20 +69,20 @@
           position relative
 
           span
-            margin-top 20px
+            margin-top 2em
             vertical-align top
 
         .memoName, .demand
           position relative
           width 50%
-          margin-top 10px
-          padding 10px 20px
+          margin-top 1em
+          padding 1em 2em
           border-radius 20px
           display inline-block
           border 1px solid #f1f1f1
 
         span
-          width 80px
+          width 8em
           text-align left
           display inline-block
           vertical-align middle
@@ -89,8 +92,8 @@
       position relative
       height 50px
       width 50%
-      margin-top 10px
-      padding 10px 18px
+      margin-top 1em
+      padding 1em 18px
       border-radius 20px
       background-color #fff
       border 1px solid #f1f1f1
@@ -108,20 +111,16 @@
     border 1px solid #f1f1f1
 
   .items
-    display inline-block
-    margin-left 80px
-    margin-top 10px
-
-    input
-      width 5px
+    margin-top 1em
 
   .add-item
     position absolute
-    top 20px
-    width 50px
-    margin-left 10px
+    top 2em
+    width 5em
+    margin-left 1em
 
   .item
+    text-align left
     position relative
     padding 0 6px
     background-color white
@@ -132,23 +131,18 @@
     &:nth-of-type(even)
       background-color #d8e8cb
 
-    div
-      display inline-block
-
     input
       position absolute
       top 50%
       transform translate3d(0, -50%, 0)
 
     div
-      width 420px
+      display inline-block
       padding 5px
-      font-size 12px
       text-align left
-      margin-left 20px
+      margin-left 2em
 
   .save-memo
-    width 100px
-    font-size 16px
-    margin-top 20px
+    width 10em
+    margin-top 2em
 </style>

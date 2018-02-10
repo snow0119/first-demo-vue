@@ -30,20 +30,21 @@
 </script>
 <style lang="stylus">
   .container-list
-    font-size 16px
+    width 92em
+    margin 0 auto
+    max-width 95%
 
     ul
       padding 0
-      margin 0 200px
       list-style none
       overflow scroll
       max-height 478px
 
       li
-        padding 10px
+        padding 1em
         text-align left
         border-radius 15px
-        margin-bottom 10px
+        margin-bottom 1em
         background-color rgba(255, 255, 255, 0.6)
 
         div
@@ -57,7 +58,7 @@
           float right
           color #68999d
           font-size 12px
-          margin-right 20px
+          margin-right 2em
           padding-left 1rem
 
         p
@@ -76,20 +77,20 @@
     margin-left 60%
     margin-right 25%
     padding 5px 10px
-    margin-bottom 20px
-    border-radius 30px
+    margin-bottom 2em
+    border-radius 3em
     background-color #fff
 
   .empty
-    margin 0 200px
+    margin 0 20em
     font-size 14px
-    padding 50px 10px
+    padding 5em 1em
     border-radius 15px
     background-color rgba(255, 255, 255, 0.6)
 
   button
     display block
     color #68999d
-    margin 20px auto
+    margin 2em auto
     background-color #fff
 </style>
