@@ -50,10 +50,11 @@
 
 <style lang="stylus">
   .blog
-    width 920px
+    width 76.8%
     margin 0 auto
+    min-width 62em
+    max-width 125em
     text-align left
-    /*padding 30px 100px*/
 
     header
       height 80px
@@ -68,17 +69,17 @@
       float left
 
     .secondary
-      width 230px
+      width 25%
 
     .primary
-      width 650px
-      padding-right 20px
+      width 72.82%
 
       .secondary
-        width 230px
+        width 34.33%
 
       .primary
-        width 400px
+        width 59.7%
+        padding-right 2.63%
 
     footer
       height 60px
