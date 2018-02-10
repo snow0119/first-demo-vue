@@ -66,7 +66,7 @@
     max-width 95%
     overflow hidden
     text-align left
-    background-image url("../assets/background.jpg")
+    background-image url("../assets/background.jpg") no-repeat
 
     header
       padding 2em
@@ -100,14 +100,17 @@
       overflow hidden
 
       .box
-        width 290px
+        width 30%
         float left
-        padding 20px
+        padding 1em
         display inline
-        margin-left 20px
+        margin-left 1em
         text-align center
-        border-radius 3em
+        border-radius 30px
         background-color ghostwhite
+
+        &:first-child
+          margin-left none
 
     footer
       padding 1em
