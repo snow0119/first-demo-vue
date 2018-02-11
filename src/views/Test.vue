@@ -1,28 +1,21 @@
 <template lang="pug">
-  div(class = 'content')
-    h1 我是标题
-    span 来测试pug模板了~~~
-    button(@click="postData") sendPost
+  div(class="box")
+    p 你看好唔可以去问尽快回卡记得与爱情口味呢看来回周口大群我看就好了hi轻微的李全英文
 </template>
+
 <script>
   export default {
-    name: 'test',
-    methods: {
-      postData () {
-        this.$http({
-          method: 'post',
-          url: '/user',
-          data: {
-            name: 'snow',
-            info: '12'
-          }
-        })
-      }
-    }
+    name: 'find-bug'
   }
 </script>
+
 <style lang="stylus">
-  .content
-    color white
-    background-color grey
+  .box
+    margin 10px
+    padding 1px
+    background-color antiquewhite
+
+    p
+      margin 20px
+      background-color aquamarine
 </style>

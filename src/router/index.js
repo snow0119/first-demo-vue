@@ -32,5 +32,9 @@ export default new VueRouter({
     path: '/blog-index',
     name: 'blogIndex',
     component: () => import('../views/BlogIndex')
+  }, {
+    path: '/test',
+    name: 'test',
+    component: () => import('../views/Test')
   }]
 })
