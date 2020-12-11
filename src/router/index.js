@@ -29,6 +29,10 @@ export default new VueRouter({
     name: 'memoDetail',
     component: () => import('../views/MemoDetail')
   }, {
+    path: '/draggable-demo',
+    name: 'draggableDemo',
+    component: () => import('../views/DraggableDemo')
+  }, {
     path: '/blog-index',
     name: 'blogIndex',
     component: () => import('../views/BlogIndex')
