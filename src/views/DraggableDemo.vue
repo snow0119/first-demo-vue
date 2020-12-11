@@ -27,5 +27,26 @@ export default {
 <style lang="stylus">
 .container
   margin 0 auto
+
+  ul
+    margin 0
+    padding 0
+    list-style none
+
+    li
+      position relative
+      color #333
+      padding 10px 10px
+      text-align left 
+      margin-bottom 10px
+      border 1px solid #ccc
+      background-color #fff
+
+    img 
+      position absolute
+      right 10px
+      top 50%
+      width 25px
+      transform translateX(-50%)
   
 </style>
