@@ -1,14 +1,17 @@
 <template lang="pug">
   div(class="container")
-    ul
-      li(v-for="{musicId, musicName, singer} in musicList", :key="musicId") 
-        span {{musicName}} - {{singer}}
-        img(src="./sort.png")
-        
+    vuedraggable(class="music-list", v-model="musicList")
+      transition-group
+        div(v-for="{musicId, musicName, singer}, index in musicList", :key="musicId") 
+          span(class="circle") {{index+1}}
+          span {{musicName}} - {{singer}}
+          img(src="./sort.png")
 </template>
 <script>
+import vuedraggable from 'vuedraggable'
 export default {
   name: 'draggable-demo',
+  components: {vuedraggable},
   data () {
     return {
       musicList: [{
@@ -32,12 +35,12 @@ export default {
 .container
   margin 0 auto
 
-  ul
+  .music-list
     margin 0
     padding 10px
     list-style none
 
-    li
+    div
       position relative
       color #333
       padding 10px 10px
@@ -53,5 +56,15 @@ export default {
       top 50%
       width 25px
       transform translateY(-50%)
+
+  .circle
+    display inline-block
+    width 21px
+    height 21px
+    color #01bad4
+    text-align center
+    margin-right 10px
+    border-radius 30px
+    border 2px solid #01bad4
   
 </style>
