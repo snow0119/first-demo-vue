@@ -2,13 +2,13 @@
   div(class="container")
     ul
       li(v-for="{musicId, musicName, singer} in musicList", :key="musicId") 
-        span {{musicName}} {{singer}}
+        span {{musicName}} - {{singer}}
         img(src="./sort.png")
         
 </template>
 <script>
 export default {
-  name: 'draggable-name',
+  name: 'draggable-demo',
   data () {
     return {
       musicList: [{
@@ -19,6 +19,10 @@ export default {
         musicId: '2',
         musicName: '太傻',
         singer: '巫启贤'
+      }, {
+        musicId: '3',
+        musicName: '富士山下',
+        singer: '陈奕迅'
       }]
     }
   }
@@ -30,7 +34,7 @@ export default {
 
   ul
     margin 0
-    padding 0
+    padding 10px
     list-style none
 
     li
@@ -38,7 +42,8 @@ export default {
       color #333
       padding 10px 10px
       text-align left 
-      margin-bottom 10px
+      margin-bottom 5px
+      border-radius 5px
       border 1px solid #ccc
       background-color #fff
 
@@ -47,6 +52,6 @@ export default {
       right 10px
       top 50%
       width 25px
-      transform translateX(-50%)
+      transform translateY(-50%)
   
 </style>
